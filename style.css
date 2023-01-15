@@ -1,268 +1,376 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: rgb(250,250,250);
+
+body {
+    background-color: rgb(250, 250, 250);
 }
-.header{
+
+.header {
     background-image: url(images/image-hero-desktop.jpg);
     background-size: cover;
     max-width: 100%;
     height: 25rem;
 }
-.header-top-nav{
+
+.header-top-nav {
     display: flex;
-    
+
     justify-content: space-between;
     align-items: center;
     padding: 2.6rem 4.5rem;
 }
-.header-logo img{
+
+.header-logo img {
     max-width: 100%;
 }
-.header-nav{
+
+.header-nav {
     margin: 0.5rem;
     text-decoration: none;
-    color: rgb(231,232,240);
-    
+    color: rgb(231, 232, 240);
+
 }
-.content{
+.header-nav:hover{
+    color: rgb(60, 180, 171);
+    border-bottom: 2px solid rgb(60, 180, 171);
+}
+
+.content {
     margin: 0 auto;
-    
+
     border-radius: 0.5rem;
     width: 40%;
     z-index: 999;
     transform: translateY(-6rem);
 }
-.mastercraft-logo{
+
+.mastercraft-logo {
     position: absolute;
     transform: translateY(-3rem);
     right: 15rem;
 }
-.first-card,.second-card{
-    border: 1px solid rgb(255,255,255);
+
+.first-card,
+.second-card {
+    border: 1px solid rgb(255, 255, 255);
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
-    
+
 }
-.first-card h2,.first-card p{
+
+.first-card h2,
+.first-card p {
     text-align: center;
     line-height: 40px;
 }
-.first-card h2{
+
+.first-card h2 {
     padding: 0.5rem;
 }
-.first-card-opt{
+
+.first-card-opt {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 0.5rem;
-    
+
 
 }
-.fund button{
-    background-color:rgb(60,180,171) ;
+
+.fund button {
+    background-color: rgb(60, 180, 171);
     outline: none;
     border: none;
     border-radius: 1rem;
     padding: 0.6rem 1.5rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
-.bookmark button{
-    background-color:rgb(244,244,244);
+
+.bookmark button {
+    background-color: rgb(244, 244, 244);
     outline: none;
     border: none;
     border-radius: 1rem;
-    padding-right:1rem;
-    color: rgb(177,177,177);
+    padding-right: 1rem;
+    color: rgb(177, 177, 177);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
-#bookmark{
+.bookmark button:hover{
+    color: rgb(60, 180, 171);
+}
+
+#bookmark {
     max-width: 100%;
     height: 2rem;
 }
+
 .second-card-feature {
     display: flex;
     justify-content: space-around;
     padding-bottom: 1rem;
 }
-.second-card-feature p{
-    color: rgb(177,177,177);
+
+.second-card-feature p {
+    color: rgb(177, 177, 177);
     font-size: 0.8rem;
 }
-.range{
+
+.range {
     width: 100%;
 }
+
 .third-card {
     padding: 1rem;
-    border: 1px solid rgb(255,255,255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 0.5rem;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 
 }
-.third-card p{
+
+.third-card p {
     font-size: 0.9rem;
     line-height: 25px;
     padding: 1rem 0;
-    color:rgb(145,145,145) ;
+    color: rgb(145, 145, 145);
 }
-.third-card-child{
-    border: 1px solid rgb(177,177,177);
+
+.third-card-child {
+    border: 1px solid rgb(177, 177, 177);
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1rem 0;
 }
-.stand-pledge,.pledge-left{
+
+.stand-pledge,
+.pledge-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.third-card .pledge{
-    color: rgb(60,180,171);
+
+.third-card .pledge {
+    color: rgb(60, 180, 171);
     border: none;
     background-color: inherit;
     cursor: pointer;
 }
-.reward button{
-    background-color:rgb(60,180,171) ;
+
+.reward button {
+    background-color: rgb(60, 180, 171);
     outline: none;
     border: none;
     border-radius: 1rem;
     padding: 0.5rem 0.6rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 0.7rem;
+    cursor: pointer;
 }
+
 .pledge-left p {
     color: black;
     font-size: 1.5rem;
     font-weight: 900;
 }
-.pledge-left p span{
+
+.pledge-left p span {
     font-size: 0.8rem;
-    color: rgb(145,145,145);
+    color: rgb(145, 145, 145);
 }
-.no-reward button{
-    background-color:rgb(177,177,177) ;
+
+.no-reward button {
+    background-color: rgb(177, 177, 177);
     outline: none;
     border: none;
     border-radius: 1rem;
     padding: 0.5rem 0.6rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 0.7rem;
-    
+    cursor: pointer;
 }
-#no-stock{
+
+#no-stock {
     opacity: 0.5;
 }
+
 /*Selection Modal*/
-.selection-modal{
-    border: 1px solid black;
+.selection-modal {
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 0.5rem;
     padding: 0.5rem;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin: 5rem auto;
+    position: relative;
+    
 }
-.selection-modal-card{
-    border: 1px solid rgb(177,177,177);
+
+.selection-modal-card {
+    border: 1px solid rgb(177, 177, 177);
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     border-radius: 0.5rem;
+    cursor: pointer;
 }
-.selection-modal p{
-    color: rgb(177,177,177);
+.selection-modal-card:hover{
+    border-color: rgb(60, 180, 171);
+}
+
+.closeBtn {
+    background-color: inherit;
+    border: none;
+    max-width: 100%;
+}
+
+.closeModal {
+    right: 5px;
+
+    position: absolute;
+}
+
+.selection-modal p {
+    color: rgb(177, 177, 177);
     line-height: 20px;
     padding: 0.5rem 0rem;
 }
-.no-reward-pledge{
+
+.no-reward-pledge {
     display: flex;
     font-size: 0.8rem;
     gap: 1rem;
 }
-.typeOf-pledge{
+
+.typeOf-pledge {
     display: flex;
     gap: 0.8rem;
     align-items: center;
 }
-.enter-pledge{
+
+.enter-pledge {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem 0;
 }
-.typeOf-pledge .pledge{
-    color: rgb(60,180,171);
+.pledge-value{
+    width: 30%;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    transform: translateX(7rem);
+    border: 0.1rem solid black;
 }
-.stand-pledge p{
+
+.typeOf-pledge .pledge {
+    color: rgb(60, 180, 171);
+}
+
+.stand-pledge p {
     color: black;
     font-weight: 900;
 }
-.stand-pledge p span{
-    color: rgb(177,177,177);
+
+.stand-pledge p span {
+    color: rgb(177, 177, 177);
 }
-.continue{
+
+.continue {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    
 }
-.continue button{
-    background-color:rgb(60,180,171) ;
+
+.continue button {
+    background-color: rgb(60, 180, 171);
     outline: none;
     border: none;
     border-radius: 1rem;
     padding: 0.5rem 0.6rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 0.7rem;
-}
-.continue p{
-    border: 1px solid rgb(145,145,145);
-    border-radius: 1rem;
-    padding:  0.5rem;
+    cursor: pointer;
 }
 
-/*feedback*/
-.feedback{
-    text-align: center;
-    margin: auto;
-    border: 1px solid rgb(255,255,255);
-    background-color: rgb(255,255,255);
-    padding: 1rem;
-}
-.checkmark{
-    border: 1px solid rgb(60,180,171);
-    border-radius: 50%;
+.continue p {
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 1rem;
     padding: 0.5rem;
 }
-.feedback h3{
+
+#selection-modal {
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    overflow: scroll;
+
+}
+
+
+/*feedback*/
+.feedback {
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 30%;
+    margin: 5rem auto;
+    position: relative;
+
+}
+
+.feedback-modal {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.feedback-modal .feedback-closeBtn{
+   background-color: inherit;
+   max-width: 100%;
+}
+.feedback-closeModal{
+    position: absolute;
+    right: 5px;
+}
+.feedback h3 {
     color: black;
     padding: 0.5rem;
 
 }
-.feedback p{
-    color: rgb(177,177,177);
+
+.feedback p {
+    color: rgb(177, 177, 177);
     font-size: 0.8rem;
     line-height: 20px;
 }
-.feedback button{
-    background-color: rgb(60,180,171);
-    color: rgb(255,255,255);
+
+.feedback button {
+    background-color: rgb(60, 180, 171);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 0.5rem 0;
-}
-#selection-modal{
-    z-index: 1;
-    top: 0;
-    right: 0;
-    display: none;
-    background-color:gba(0,0,0,0.4) ;
-    width: 100%;
-    height: 100%;
-    position: fixed;
 }
