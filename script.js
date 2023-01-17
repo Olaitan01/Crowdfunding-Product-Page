@@ -10,8 +10,10 @@ let gotItBtn=document.querySelector(".gotIt-btn")
 let moneyEl=document.querySelector("#money")
 let personEl=document.querySelector("#person")
 let pledgeValue=document.querySelector(".pledge-value")
-let fund=89914;
-let person=5007
+let menuBtn=document.querySelector(".menu-btn")
+let openMenu=document.querySelector(".open-menu")
+let closeMenu= document.querySelector(".close-menu")
+let menuNav=document.querySelector(".header-right-nav")
 
 
 /* Pledge Modal */
@@ -31,13 +33,7 @@ continueBtn.addEventListener("click",()=>{
 
 })
 
-function gather(){
-    fund +=1;
-    person+=1
-    moneyEl.textContent= `$ ${fund}`;
-    personEl.textContent=`${person}`
-    
-}
+
 continueBtnOne.addEventListener("click",()=>{
     feedbackModal.style.display="block"
 })
@@ -53,6 +49,20 @@ feedbackcloseBtn.addEventListener("click",()=>{
 gotItBtn.addEventListener("click",()=>{
     modal.style.display="none"
     feedbackModal.style.display="none"
+})
+
+menuBtn.addEventListener("click",()=>{
+ if(closeMenu.classList.contains(".active")){
+    closeMenu.classList.toggle(".active")
+    menuNav.style.display="block"
+    closeMenu.style.display="block"
+    openMenu.style.display="none"
+ }else{
+    closeMenu.classList.toggle(".active")
+    menuNav.style.display="none"
+    closeMenu.style.display="none"
+    openMenu.style.display="block"
+ }
 })
 
 
