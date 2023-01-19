@@ -440,7 +440,9 @@ body {
         color: rgb(231, 232, 240);
         border-bottom: 1px solid rgb(231, 232, 240);
     }
-
+    .mobile-menu-btn{
+        display: block;
+    }
     .menu-btn {
         z-index: 1;
         position: absolute;
@@ -544,7 +546,7 @@ body {
 }
 
 
-@media screen and (max-width:900px) {
+@media  (min-width:600px) and (max-width:900px) {
     .mastercraft-logo{
         right: 9rem;
     }
