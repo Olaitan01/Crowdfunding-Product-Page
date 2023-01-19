@@ -1,9 +1,8 @@
 let pledgeBtn=document.querySelector(".backBtn")
 let modal=document.querySelector(".modal")
 let feedbackModal= document.querySelector(".feedback-modal")
-let continueBtn=document.querySelector(".continue-btn")
-let continueBtnTwo=document.querySelector(".continue-btn-two")
-let continueBtnOne=document.querySelector(".continue-btn-one")
+let continueBtn=document.querySelectorAll(".continue-btn")
+
 let feedbackcloseBtn= document.querySelector(".feedback-closeBtn")
 let closeBtn= document.querySelector(".closeBtn")
 let gotItBtn=document.querySelector(".gotIt-btn")
@@ -26,20 +25,15 @@ closeBtn.addEventListener("click",()=>{
 })
 
 /*Feedback Modal */
-continueBtn.addEventListener("click",()=>{
-    feedbackModal.style.display="block"
+for (let i=0;i<continueBtn.length;i++){
+    continueBtn[i].addEventListener("click",()=>{
+        feedbackModal.style.display="block"
+    })
+}
 
-   gather()
-
-})
 
 
-continueBtnOne.addEventListener("click",()=>{
-    feedbackModal.style.display="block"
-})
-continueBtnTwo.addEventListener("click",()=>{
-    feedbackModal.style.display="block"
-})
+
 
 feedbackcloseBtn.addEventListener("click",()=>{
     feedbackModal.style.display="none"
@@ -52,17 +46,20 @@ gotItBtn.addEventListener("click",()=>{
 })
 
 menuBtn.addEventListener("click",()=>{
- if(closeMenu.classList.contains(".active")){
-    closeMenu.classList.toggle(".active")
-    menuNav.style.display="block"
-    closeMenu.style.display="block"
-    openMenu.style.display="none"
- }else{
-    closeMenu.classList.toggle(".active")
-    menuNav.style.display="none"
-    closeMenu.style.display="none"
-    openMenu.style.display="block"
- }
+    if(closeMenu.style.display==="block"){
+        openMenu.style.display="block"
+        closeMenu.style.display="none"
+        menuNav.style.display="none"
+        
+        console.log("wrong")
+    }else{
+       
+        openMenu.style.display="none"
+        closeMenu.style.display="block"
+        menuNav.style.display="block"
+        
+        console.log("right")
+    }
 })
 
 
