@@ -176,6 +176,9 @@ body {
     padding: 1rem;
     margin: 1rem 0;
 }
+.third-card-child:hover{
+    border-color: rgb(60, 180, 171);
+}
 
 .stand-pledge,
 .pledge-left {
@@ -516,6 +519,9 @@ body {
         text-align: left;
         align-items: flex-start;
         line-height: 10px;
+    }
+    #no-stock h3{
+        line-height: 25px;
     }
     /*Mobile View for Modal Selection*/
     .selection-modal{
