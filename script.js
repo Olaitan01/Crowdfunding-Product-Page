@@ -14,6 +14,9 @@ let openMenu=document.querySelector(".open-menu")
 let closeMenu= document.querySelector(".close-menu")
 let menuNav=document.querySelector(".header-right-nav")
 
+let hit=document.querySelector(".click")
+
+
 
 /* Pledge Modal */
 pledgeBtn.addEventListener("click",()=>{
@@ -28,11 +31,35 @@ closeBtn.addEventListener("click",()=>{
 for (let i=0;i<continueBtn.length;i++){
     continueBtn[i].addEventListener("click",()=>{
         feedbackModal.style.display="block"
+        move()
+    
     })
 }
 
+/*hit.addEventListener("click",()=>{
+    move()
+})*/
 
-
+let i=0;
+ function move(){
+    if(i==0){
+        let i=1;
+        let width=10;
+        let elem= document.querySelector(".progress-bar");
+        let id= setInterval(progress,100);
+        
+        function progress(){
+            if(width>=50){
+                clearInterval(id)
+                 i=0
+            }else{
+                width++;
+                elem.style.width=width + "%";
+                
+            }
+        }
+    }
+ }
 
 
 feedbackcloseBtn.addEventListener("click",()=>{
