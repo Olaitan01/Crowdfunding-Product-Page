@@ -71,12 +71,14 @@ body {
 
 }
 
-.first-card h2,
-.first-card p {
+.first-card h2 {
     text-align: center;
     line-height: 40px;
 }
-
+.first-card p{
+    line-height: 30px;
+    text-align: center;
+}
 .first-card h2 {
     padding: 0.5rem;
 }
