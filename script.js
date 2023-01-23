@@ -32,7 +32,7 @@ for (let i=0;i<continueBtn.length;i++){
     continueBtn[i].addEventListener("click",()=>{
         feedbackModal.style.display="block"
         move()
-    
+       
     })
 }
 
@@ -44,12 +44,12 @@ let i=0;
  function move(){
     if(i==0){
         let i=1;
-        let width=10;
+        let width=70;
         let elem= document.querySelector(".progress-bar");
         let id= setInterval(progress,100);
         
         function progress(){
-            if(width>=50){
+            if(width>=95){
                 clearInterval(id)
                  i=0
             }else{
@@ -61,6 +61,8 @@ let i=0;
     }
  }
 
+
+ 
 
 feedbackcloseBtn.addEventListener("click",()=>{
     feedbackModal.style.display="none"
@@ -89,5 +91,5 @@ menuBtn.addEventListener("click",()=>{
     }
 })
 
-
+ 
 

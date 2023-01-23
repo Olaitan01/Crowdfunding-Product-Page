@@ -101,7 +101,7 @@ body {
 }
 .progress-bar{
     background:rgb(60, 180, 171);
-    width:10%;
+    width:80%;
       height:2.4vh;
       border-radius:0.5rem;
     overflow:hidden;
@@ -281,7 +281,53 @@ body {
     font-size: 0.8rem;
     gap: 1rem;
 }
-
+.container{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    top: -5px;
+    left: -5px;
+    padding-right: 0.5rem;
+}
+.container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #eee;
+}
+.container:hover input .checkbox{
+    background-color: grey;
+}
+.container input:checked .checkbox{
+    background-color: #eee;
+}
+.checkbox::after{
+    position: absolute;
+    content: "";
+    display: none;
+}
+.container input:checked ~ .checkbox::after{
+    display: block;
+}
+.container .checkbox::after{
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(60, 180, 171);
+}
 .typeOf-pledge {
     display: flex;
     gap: 0.8rem;
@@ -293,6 +339,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem 0;
+    display: none;
+
+}
+.selection-modal-card:hover .enter-pledge{
+    display: block;
 }
 
 .pledge-value {
@@ -570,6 +621,7 @@ body {
         width: 80%;
     }
 }
+
 
 
 @media  (min-width:600px) and (max-width:900px) {
