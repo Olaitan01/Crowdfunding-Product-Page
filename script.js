@@ -2,7 +2,7 @@ let pledgeBtn=document.querySelector(".backBtn")
 let modal=document.querySelector(".modal")
 let feedbackModal= document.querySelector(".feedback-modal")
 let continueBtn=document.querySelectorAll(".continue-btn")
-
+let bookmarkBtn= document.querySelector("#bookmark-btn")
 let feedbackcloseBtn= document.querySelector(".feedback-closeBtn")
 let closeBtn= document.querySelector(".closeBtn")
 let gotItBtn=document.querySelector(".gotIt-btn")
@@ -16,7 +16,15 @@ let menuNav=document.querySelector(".header-right-nav")
 
 let hit=document.querySelector(".click")
 
-
+/* Bookmark Button*/
+bookmarkBtn.addEventListener("click",()=>{
+    localStorage.setItem("bookmark",window.location.href);
+    alert("Bookmarked");
+    let bookmark=localStorage.getItem("bookmark");
+    if(bookmark){
+        window.location.href=bookmark
+    }
+})
 
 /* Pledge Modal */
 pledgeBtn.addEventListener("click",()=>{
