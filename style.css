@@ -485,19 +485,21 @@ body {
     }
 
     .header-right-nav {
-        background-color: rgb(60, 180, 171);
-        width: 100%;
+        background-color: white;
+        width: 90%;
+        margin: 2rem 1rem;
         position: absolute;
         height: 9rem;
         left: 0;
         top: 0;
-        position: fixed;
+        border-radius: 0.5rem;
         text-align: center;
         padding: 1rem;
         font-size: 1.5rem;
         display: none;
         z-index: 1;
         transition: 0.9s;
+        color: black;
         
         
     }
@@ -513,11 +515,12 @@ body {
     }
 
     .header-nav:hover {
-        color: rgb(231, 232, 240);
+        color: black;
         border-bottom: 1px solid rgb(231, 232, 240);
     }
     .mobile-menu-btn{
         display: block;
+        
     }
     .menu-btn {
         z-index: 1;
@@ -528,6 +531,7 @@ body {
         right: 0.5rem;
         display: block;
         max-width: 100%;
+        cursor: pointer;
     }
 
     .close-menu {
