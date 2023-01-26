@@ -335,7 +335,7 @@ body {
     align-items: center;
 }
 
-.enter-pledge {
+ .enter-pledge {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -616,7 +616,9 @@ body {
     .left{
         display: none;
     }
-
+    .mobile-left{
+        display: block;
+    }
     /*Feedback Mobile Modal*/
     .feedback{
         width: 80%;
