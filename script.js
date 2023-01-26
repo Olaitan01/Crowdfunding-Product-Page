@@ -59,9 +59,18 @@ function backers() {
 /*Value intake */
 function valueEl(){
     let inputEl= pledgeValue.value;
-    fund +=parseInt(inputEl);
-    moneyEl.innerHTML= `$89,${fund}`;
+        fund += parseInt(inputEl);
+       
+        if(isNaN(fund)){
+            moneyEl.innerHTML="$89,914";
+            
     
+        }else{
+            fund += parseInt(inputEl)
+            moneyEl.innerHTML=`$89,${fund}`;
+        }
+        
+           
 }
 
 /*hit.addEventListener("click",()=>{
