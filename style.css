@@ -631,14 +631,5 @@ body {
     }
 }
 
-@media (min-width:300px) {
-    .mastercraft-logo{
-        right: 8rem;
-    }
-}
-@media (min-width:500px) {
-    .mastercraft-logo{
-        right: 12rem;
-    }
-}
+
 
