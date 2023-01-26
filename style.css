@@ -232,7 +232,9 @@ body {
 
 #no-stock {
     opacity: 0.5;
+    cursor: not-allowed;
 }
+
 
 /*Selection Modal*/
 .selection-modal {
@@ -329,6 +331,7 @@ body {
     cursor: pointer;
     background-color: rgb(60, 180, 171);
 }
+
 .typeOf-pledge {
     display: flex;
     gap: 0.8rem;
@@ -489,7 +492,7 @@ body {
         width: 90%;
         margin: 2rem 1rem;
         position: absolute;
-        height: 9rem;
+        height: 50vh;
         left: 0;
         top: 0;
         border-radius: 0.5rem;
@@ -500,6 +503,7 @@ body {
         z-index: 1;
         transition: 0.9s;
         color: black;
+        border: 0.1rem solid rgb(255, 255, 255);
         
         
     }
@@ -510,6 +514,7 @@ body {
         margin: 0.5rem;
         text-decoration: none;
         color: black;
+        padding: 0.5rem;
 
 
     }
