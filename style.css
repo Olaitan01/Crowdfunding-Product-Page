@@ -543,7 +543,7 @@ body {
        position: none;
        z-index: 1;
        transform: translateY(-3rem);
-       right:7.5rem;
+       right: 7.5rem;
        display: flex;
        justify-content: center;
         
@@ -632,6 +632,7 @@ body {
 
 
 
+
 @media  (max-width:768px)  {
     .mastercraft-logo{
         right: 8rem;
@@ -647,11 +648,7 @@ body {
        right: 8rem;
     }   
    }
-   @media (max-width:884px) {
-    .mastercraft-logo{
-       right: 9rem;
-    }   
-   }
+   
 
 
 
